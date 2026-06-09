@@ -1,5 +1,5 @@
 {
-  "name": "claude-code-hooks",
+  "name": "@tiktokcity/claude-code-hooks",
   "version": "1.0.0",
   "description": "Pre-built hooks for Claude Code — ping on done, skill usage logger, and more.",
   "bin": {
@@ -13,6 +13,11 @@
     "developer-tools"
   ],
   "license": "MIT",
+  "author": "vandanh1808",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vandanh1808/claude-code-hooks.git"
+  },
   "files": [
     "bin/",
     "hooks/"
