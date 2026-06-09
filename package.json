@@ -1,0 +1,20 @@
+{
+  "name": "claude-code-hooks",
+  "version": "1.0.0",
+  "description": "Pre-built hooks for Claude Code — ping on done, skill usage logger, and more.",
+  "bin": {
+    "claude-code-hooks": "./bin/cli.js"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "hooks",
+    "ai",
+    "developer-tools"
+  ],
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "hooks/"
+  ]
+}
