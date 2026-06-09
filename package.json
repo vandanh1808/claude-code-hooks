@@ -1,5 +1,5 @@
 {
-  "name": "@tiktokcity/claude-code-hooks",
+  "name": "vt-claude-hooks",
   "version": "1.0.0",
   "description": "Pre-built hooks for Claude Code — ping on done, skill usage logger, and more.",
   "bin": {
