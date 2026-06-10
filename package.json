@@ -1,6 +1,6 @@
 {
   "name": "vt-claude-hooks",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Pre-built hooks for Claude Code — ping on done, skill usage logger, and more.",
   "bin": {
     "claude-code-hooks": "./bin/cli.js"
