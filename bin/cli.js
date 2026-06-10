@@ -14,9 +14,9 @@ const REGISTRY = {
   },
   "skill-usage-logger": {
     file: "skill-usage-logger.sh",
-    description: "Log Skill/Read/Write/Edit calls to .claude/skill-usage.log",
+    description: "Log which skills Claude uses to .claude/skill-usage.log",
     event: "PostToolUse",
-    matchers: ["Skill", "Read|Write|Edit"],
+    matcher: "Skill",
   },
 };
 

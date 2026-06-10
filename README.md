@@ -24,7 +24,7 @@ npx vt-claude-hooks list                     # List available hooks
 | Hook | Event | Description |
 |------|-------|-------------|
 | `ping-on-done` | `Stop` | Plays a beep sound when Claude finishes a task |
-| `skill-usage-logger` | `PostToolUse` | Logs `Skill`, `Read`, `Write`, `Edit` tool calls to `.claude/skill-usage.log` |
+| `skill-usage-logger` | `PostToolUse` | Logs which skills Claude uses to `.claude/skill-usage.log` |
 
 ### ping-on-done
 
@@ -36,13 +36,12 @@ Plays a short notification sound when Claude completes a response.
 
 ### skill-usage-logger
 
-Logs every tool call with timestamps to `.claude/skill-usage.log`:
+Tracks which skills Claude invokes — clean, one-line-per-skill log:
 
 ```
-[2026-06-09T07:08:26Z] SKILL_CALLED: draw-erd
-[2026-06-09T07:08:26Z] FILE_READ: docs/erd/erd-diagram.drawio
-[2026-06-09T07:08:44Z] FILE_WRITTEN: docs/reviews/skill-execution-log.md
-[2026-06-09T07:08:52Z] FILE_EDITED: src/app.module.ts
+[2026-06-09T14:08:26Z] SKILL: draw-erd
+[2026-06-09T14:15:03Z] SKILL: gen-module
+[2026-06-09T14:22:41Z] SKILL: review-code
 ```
 
 No dependencies required — uses `sed` (available in any bash environment).
